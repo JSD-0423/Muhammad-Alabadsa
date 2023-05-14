@@ -1,0 +1,24 @@
+:root {
+  --brand-primary:	#0768AC;
+  --brand-secondary:	#03C180;
+  --bg_default:	#FFFFFF;
+  --bg_body:	#F0F9FF;
+  --lines-color:	#DDDDDD;
+  --body-text:	#333333;
+  --heart-color:	#DC143C;
+  --radius-sm: 00.25rem;
+  --radius-md: 0.5rem;
+  --shadow-color: rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] {
+	--brand-primary:	#0768AC;
+ 	--brand-secondary:	#03C180;
+ 	--bg_default:	#1A1A1A;
+ 	--bg_body:	#282828;
+ 	--lines-color:	#000000;
+ 	--body-text:	#EDEDED;
+ 	--heart-color:	#DC143C;
+  --shadow-color: rgba(85,85,85,0.5);
+
+}

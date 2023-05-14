@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,700;1,6..12,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/hero-section.css" />
+    <link rel="stylesheet" href="./assets/css/topics-section.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container flex justify-between items-center">
+        <div class="logo text-md">Web Topics</div>
+        <div class="actions-box flex items-center justify-between">
+          <label class="theme-switch outlined-btn" for="checkbox" role="button">
+            <input type="checkbox" id="checkbox" />
+            <ion-icon name="moon-outline" aria-hidden="true"></ion-icon>
+            <span class="button__text">Dark Mode</span>
+          </label>
+          <ion-button class="outlined-btn items-center" aria-label="Favorite">
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            <span class="button__text">Favourites</span>
+          </ion-button>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section relative">
+      <div class="absolute bg-design">
+        <div class="shape-1 absolute"></div>
+        <div class="shape-2 absolute"></div>
+      </div>
+      <div
+        class="container hero-container flex-col items-center justify-center"
+      >
+        <div class="hero-content text-left">
+          <h1 class="hero-content__main">Welcome to our website!</h1>
+          <p class="body-1">
+            We have a new design that's fresh new modern and easy to use.
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="main-content-section">
+      <div class="container">
+        <section class="action-section flex justify-center items-center">
+          <form class="form-container grid items-center">
+            <div class="input-controller search-input flex items-center">
+              <label for="search" aria-label="search on topics">
+                <ion-icon name="search-outline"></ion-icon>
+              </label>
+              <input
+                type="serach"
+                id="search"
+                aria-label="search on your topics"
+                placeholder="Search the website..."
+              />
+            </div>
+            <div class="input-controller flex-col">
+              <label class="text-sm pl-1" for="sortby">Sort by:</label
+              ><select type="" id="sortby" aria-label="sort resuls">
+                <optgroup>
+                  <option value="desc">Default</option>
+                  <option value="desc">Desc</option>
+                  <option value="asc">Asce</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="input-controller flex-col">
+              <label class="text-sm pl-1" for="filterby">Filter by:</label>
+              <select type="" id="filterby" aria-label="filter resuls">
+                <optgroup>
+                  <option value="">Name</option>
+                  <option value="">category</option>
+                  <option value="">rate</option>
+                </optgroup>
+              </select>
+            </div>
+          </form>
+        </section>
+        <div class="topics-section">
+          <div class="items-count text-lg" id="topics-count"></div>
+          <div class="cards-container grid" id="cards"></div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/theme-mode.js" type="module"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>
+

@@ -1,0 +1,181 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  background-color: var(--bg_default);
+  color: var(--body-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+ion-button, button {
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.body-1 {
+  color: var(--body-text);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding-inline: 2rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.outlined-btn {
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--lines-color);
+  border-radius: var(--radius-sm);
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+
+.pl-5 {
+  padding-left: 1.5rem;
+}
+
+.pr-1 {
+  padding-left: 0.25rem;
+}
+
+.pr-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-3 {
+  padding-left: 0.75rem;
+}
+
+
+.pr-4 {
+  padding-left: 1rem;
+}
+
+
+.pr-5 {
+  padding-left: 1.5rem;
+}
+
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+
+.p-4 {
+  padding: 1rem;
+}
+
+
+.p-5 {
+  padding: 1.5rem;
+}
+
+
+@media only screen and (max-width: 390px) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+

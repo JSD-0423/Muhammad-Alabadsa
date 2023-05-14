@@ -1,0 +1,159 @@
+
+.main-content-section {
+  background-color: var(--bg_body);
+  min-height: 10rem;
+  padding-block: 1rem;
+}
+
+.action-section { 
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 10px -2px var(--shadow-color);
+  background-color: var(--bg_default);
+}
+
+.form-container {
+  grid-template-columns: 8fr 2fr 2fr;
+  width: 100%;
+}
+
+.input-controller:not(:first-child) {
+  border-left: 1px solid var(--lines-color);
+}
+
+.input-controller {
+  padding: 0.5rem;
+}
+
+.input-controller label {
+  display: inline-flex;
+}
+
+.search-input input {
+  background-color: var(--bg-default);
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--body-text);
+}
+
+.search-input input::placeholder {
+  color: var(--body-text); 
+  font-weight: 400;
+}
+
+.input-controller select {
+  color: var(--body-text);
+}
+
+.input-controller select * {
+  color: var(--body-text);
+  background: var(--bg_body);
+}
+
+
+html[data-theme="dark"] .input-controller select * {
+  color: #EDEDED;
+  background: #282828;
+}
+
+.cards-container {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.items-count {
+  padding-block: 1rem;
+  font-weight: 800;
+}
+
+.card {
+  background-color: var(--bg_default);
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 10px -2px var(--shadow-color);
+  width: auto;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 100%;
+  height: min(150px, 20vh);
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body .title {
+  font-weight: 400;
+}
+
+.rating-containers {
+  padding-block: 1rem;
+}
+
+.rating-containers ion-icon[name="star"],
+.rating-containers ion-icon[name="star-half-outline"],
+.rating-containers ion-icon[name="star-outline"] {
+  color: orange;
+}
+
+.author {
+  color: var(--body-text);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.author a {
+  text-decoration: none;
+  color: var(--body-text);
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-container {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-controller:not(:first-child) {
+    border-top: 1px solid var(--lines-color);
+    border-left: none;
+    grid-row: 2 / 3;
+  }
+
+  .input-controller:last-child {
+    border-left: 1px solid var(--lines-color);
+  }
+
+  .input-controller.search-input {
+    grid-column: 1 / 3;
+  }
+
+}
+
+
+@media only screen and (max-width: 390px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

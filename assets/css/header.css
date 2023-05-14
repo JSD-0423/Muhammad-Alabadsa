@@ -1,0 +1,43 @@
+/* Header Section */
+.header-container {
+  height: 60px;
+}
+
+.header {
+  box-shadow: 0 0 10px -1px var(--shadow-color);
+}
+
+.logo {
+  color:var(--brand-primary);
+  font-weight: 700;
+}
+
+.outlined-btn span {
+  padding-left: 0.25rem;
+}
+
+ion-icon[name=heart] {
+  color: var(--heart-color)
+}
+
+.actions-box {
+  gap: 0.25rem
+}
+
+.theme-switch {
+  cursor: pointer;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+input:checked {
+  background-color: #66bb6a;
+}
+
+@media only screen and (max-width: 390px) {
+  .actions-box span.button__text {
+    display: none;
+  }
+}
