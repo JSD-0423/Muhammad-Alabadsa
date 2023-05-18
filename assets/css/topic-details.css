@@ -1,0 +1,51 @@
+.topics-details-section {
+  width: 100%;
+  background-color: #333333;
+  padding-block: 2rem;
+}
+
+.topic-card {
+  right: 1rem;
+  width: 30%;
+  border-radius: 0;
+}
+
+.topic-card-header {
+  height: 150px;
+}
+
+.card-actions {
+  border: 1px solid #C7C7C7;
+}
+
+.card-actions p {
+  padding-bottom: 0.5rem;
+}
+
+.icon-btn {
+  background-color: var(--brand-secondary);
+  color: #f5f5f5;
+  border-radius: 0;
+  width: 100%;
+}
+
+.card-actions ion-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.topic-details {
+  width: 50%;
+}
+
+.topic-title__main {
+  color: var(--brand-secondary);
+}
+
+.topic-title__secondary {
+  color: #f5f5f5;
+}
+
+.topic-desc {
+  color: #f5f5f5;
+}

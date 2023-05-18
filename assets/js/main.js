@@ -1,6 +1,10 @@
 import { topics } from "./data.js";
 
 const $cardContainer = document.getElementById("cards");
+const $topicsSection = document.getElementsByClassName("topics-section")[0];
+const $topicDetailsSection = document.getElementsByClassName(
+  "topic-details-section"
+)[0];
 
 console.log({ $cardContainer });
 
@@ -24,19 +28,21 @@ const ratingElements = (language, rate) => {
 };
 
 const createCardTemplate = ({ title, img, language, rating, author }) => `
-    <div class="card">
-      <div class="card-header">
-        <img src="${img}" alt="${language}" />
-      </div>
-      <div class="card-body flex-col p-3">
-        <h3 class="title text-sm">${title}</h3>
-        <h4 className="text-md ">${language}</h4>
+    <button class="text-btn" id="topics-route">
+      <div class="card">
+        <div class="card-header">
+          <img src="${img}" alt="${language}" />
+        </div>
+        <div class="card-body flex-col p-3">
+          <h3 class="title text-sm">${title}</h3>
+          <h4 className="text-md ">${language}</h4>
         <div class="rating-containers" id="${language}-${rating}"></div>
-        <address class="author text-sm">
-          Author: <a rel="author" href="/author/john-doe">${author}</a>
-        </address>
+          <address class="author text-sm">
+            Author: <a rel="author" href="/author/john-doe">${author}</a>
+          </address>
+        </div>
       </div>
-    </div>`;
+    </button>`;
 
 topics.forEach((elmt) => {
   const template = createCardTemplate(elmt);
@@ -52,4 +58,10 @@ const $itemsCountElmt = document.getElementById("topics-count");
 $itemsCountElmt.innerHTML = `"${topics.length}" Web Topic${
   topics.length === 0 ? "" : "s"
 } Found`;
+
+const $topicsRoute = document.getElementById("topics-route");
+$topicsRoute.addEventListener("click", () => {
+  $topicsSection.classList.add("hidden");
+  $topicDetailsSection.classList.remove("hidden");
+});
 

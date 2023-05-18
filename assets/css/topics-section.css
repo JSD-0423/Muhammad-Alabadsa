@@ -7,7 +7,6 @@
 
 .action-section { 
   border-radius: var(--radius-md);
-  box-shadow: 0 0 10px -2px var(--shadow-color);
   background-color: var(--bg_default);
 }
 
@@ -69,10 +68,16 @@ html[data-theme="dark"] .input-controller select * {
 
 .card {
   background-color: var(--bg_default);
-  border-radius: var(--radius-md);
-  box-shadow: 0 0 10px -2px var(--shadow-color);
-  width: auto;
+  width: 100%;
   overflow: hidden;
+  border-radius: var(--radius-md);
+  /* box-shadow: 0 0 10px -2px var(--shadow-color); */
+}
+
+#topics-route {
+  border-radius: var(--radius-md);
+  background-color: var(--bg_default);
+  box-shadow: 0 0 10px -2px var(--shadow-color);
 }
 
 .card-header {
@@ -86,9 +91,19 @@ html[data-theme="dark"] .input-controller select * {
   object-fit: cover;
 }
 
+.card-body {
+  align-items: flex-start;
+}
+
 .card-body .title {
   font-weight: 400;
+  color: var(--body-text);
 }
+
+.card-body h4 {
+  color: var(--body-text);
+}
+
 
 .rating-containers {
   padding-block: 1rem;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/hero-section.css" />
     <link rel="stylesheet" href="./assets/css/topics-section.css" />
+    <link rel="stylesheet" href="./assets/css/topic-details.css" />
     <title>Document</title>
   </head>
   <body>
@@ -91,6 +92,49 @@
         <div class="topics-section">
           <div class="items-count text-lg" id="topics-count"></div>
           <div class="cards-container grid" id="cards"></div>
+        </div>
+      </div>
+    </main>
+    <main class="topics-details-section">
+      <div class="topics-details-container container" id="topics-details">
+        <div class="topic-meta relative flex justify-between">
+          <div class="topic-details">
+            <h2 class="topic-title__main pb-1">Web development</h2>
+            <h3 class="topic-title__secondary pt-1 pb-1">HTML</h3>
+            <div class="topic-rate pt-1 pb-1"></div>
+            <div class="topic-desc pt-1 pb-1">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                dolore labore doloremque fugiat corporis ducimus quas,
+                repudiandae obcaecati inventore voluptate a illo amet suscipit
+                enim sed commodi illum. Reiciendis, sit.
+              </p>
+            </div>
+          </div>
+          <div class="card topic-card absolute p-4">
+            <div class="card-header topic-card-header">
+              <img src="./assets//images/Logos/html.png" alt="html" />
+            </div>
+            <div class="card-title flex items-center pt-3 pb-3">
+              <h4 className="text-md ">HTML</h4>
+              &nbsp;by&nbsp;
+              <span class="author text-sm flex items-center">
+                <a rel="author" href="/author/john-doe" class="text-md"></a>
+                  &nbsp;Sarah&nbsp;</a
+                >
+              </span>
+            </div>
+            <div class="card-actions flex-col items-center p-4">
+              <p>Interested about this topic?</p>
+              <button
+                class="outlined-btn icon-btn p-3 flex justify-between text-md"
+              >
+                Add To Favourites
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+              <span class="text-sm p-2">Unlimited Credits</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>
